@@ -1,0 +1,112 @@
+
+@import url('./variables.css');
+
+body{
+    font-family: var(--font-family-main);
+    font-size: clamp(var(--font-size-min), 5vw, 0.875rem) ;
+    font-weight: 200;
+    background-color: var(--color-neutral-light-gray);
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-weight: 300;
+    font-size: clamp(1.375rem, 5vw, 2.3125rem);
+}
+h2{
+    font-size: clamp(1.375rem, 5vw, 2.3125rem);
+    font-weight: 700;
+    margin: 0.625rem;
+}
+.section-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 3.4375rem 0;
+}
+
+.section-header p{
+    inline-size: 85%;
+    font-size: clamp(0.125rem, 5vw, 0.9375rem) ;
+}
+
+.section-tools{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5625rem;
+    margin: 0 auto;
+}
+.column{
+    align-content: center;
+}
+.card{
+    border-radius: 0.3125rem;
+    max-inline-size: 13.125rem;
+    block-size: 8.125rem;
+    background-color: var(--color-neutral-white);
+    padding: 1.5625rem;
+    position: relative;
+    box-shadow:
+        0 0.625rem 0.375rem -0.375rem rgba(0,0,0,0.4),
+        0.25rem 0 0.375rem -0.375rem rgba(0,0,0,0.4),
+        -0.25rem 0 0.375rem -0.375rem rgba(0,0,0,0.4);
+
+}
+
+.supervisor{
+    border-top: 0.3125rem solid var(--color-primary-cyan);
+}
+.team-builder{
+    margin-block-end: 1.5625rem;
+    border-top: 0.3125rem solid var(--color-primary-red);
+}
+.karma{
+    border-top: 0.3125rem solid var(--color-primary-orange);
+}
+.calculator{
+    border-top: 0.3125rem solid var(--color-primary-blue);
+}
+.card-title{
+    font-weight: 900;
+    font-size: clamp(var(--font-size-min), 5vw, 1rem) ;
+}
+
+.card-description{
+    font-size: clamp(0.05rem, 5vw, 0.625rem);
+    margin: 0.3125rem 0;
+}
+
+.card img{
+    bottom: 15%;
+    right: 1.25rem;
+    inline-size: 2.8125rem;
+    block-size: 2.8125rem;
+    position: absolute;
+}
+
+
+@media (max-width: 37.5rem){
+
+        .section-tools{
+            grid-template-columns: 1fr;
+        }
+}
+
+@media (min-width: 37.5625rem){
+        .section-tools{
+            grid-template-columns: repeat(3,1fr);
+        }
+}
