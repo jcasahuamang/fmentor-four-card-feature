@@ -67,17 +67,17 @@ h2{
 }
 
 .supervisor{
-    border-top: 0.3125rem solid var(--color-primary-cyan);
+    border-block-start: 0.3125rem solid var(--color-primary-cyan);
 }
 .team-builder{
     margin-block-end: 1.5625rem;
-    border-top: 0.3125rem solid var(--color-primary-red);
+    border-block-start: 0.3125rem solid var(--color-primary-red);
 }
 .karma{
-    border-top: 0.3125rem solid var(--color-primary-orange);
+    border-block-start: 0.3125rem solid var(--color-primary-orange);
 }
 .calculator{
-    border-top: 0.3125rem solid var(--color-primary-blue);
+    border-block-start: 0.3125rem solid var(--color-primary-blue);
 }
 .card-title{
     font-weight: 900;
@@ -90,8 +90,8 @@ h2{
 }
 
 .card img{
-    bottom: 15%;
-    right: 1.25rem;
+    inset-block-end: 15%;
+    inset-inline-end: 1.25rem;
     inline-size: 2.8125rem;
     block-size: 2.8125rem;
     position: absolute;
